@@ -5,19 +5,19 @@ This repository contains a series of Python scripts for downloading market data,
 ## File Organization & Logical Order
 
 1. **Core utilities & notebook scripts (legacy)**
-- `m1_data_loader.py` – simple downloader for Gold/Copper etc.
-- `m2_processor.py` – add technical indicators (RSI, SMA).
-- `m3_model.py` – train a basic XGBoost model on processed data.
-- `m4_main.py` – orchestrates the m1–m3 workflow and plots results.
+- `m01_data_loader.py` – simple downloader for Gold/Copper etc.
+- `m02_processor.py` – add technical indicators (RSI, SMA).
+- `m03_model.py` – train a basic XGBoost model on processed data.
+- `m04_main.py` – orchestrates the m1–m3 workflow and plots results.
 
 2. **Version 2: multi‑metal pipeline with backtesting**
-- `m5_v2_data_loader.py` – downloads and synchronises five metals plus BTC.
-- `m6_v2_model.py` – trains separate models for each metal, uses enhanced features.
-- `m7_v2_backtester.py` – simulates a trading strategy and plots equity curves.
-- `m8_v2_main.py` – integrated system that runs the full V2 pipeline end‑to-end.
+- `m05_v2_data_loader.py` – downloads and synchronises five metals plus BTC.
+- `m06_v2_model.py` – trains separate models for each metal, uses enhanced features.
+- `m07_v2_backtester.py` – simulates a trading strategy and plots equity curves.
+- `m08_v2_main.py` – integrated system that runs the full V2 pipeline end‑to-end.
 
 3. **Version 3: hyperparameter optimisation & modular forecasting**
-- `m9_v3_hyper_optimizer.py` – Optuna‑based search for best XGBoost parameters.
+- `m09_v3_hyper_optimizer.py` – Optuna‑based search for best XGBoost parameters.
 - `m10_v3_forecaster.py` – loads saved v3 models and produces daily price forecasts.
 
 4. **Version 4: live updater & all‑in‑one runner**
@@ -96,8 +96,8 @@ The Telegram bot uses the following JSON files for data persistence:
 
 ## Typical Workflows
 
-* **Quick start**: run `python m4_main.py` to execute the original gold‑only forecasting system.
-* **Version 2 analysis**: execute `python m8_v2_main.py` to download, model, backtest across multiple metals.
+* **Quick start**: run `python m04_main.py` to execute the original gold‑only forecasting system.
+* **Version 2 analysis**: execute `python m08_v2_main.py` to download, model, backtest across multiple metals.
 * **Retraining/optimisation**: use `python m15_run_full_retrain.py` followed by `python m10_v3_forecaster.py` or `python m12_v4_all_in_one.py` for daily forecasts.
 * **Manual maintenance**: use `python m11_v4_live_updater.py` to refresh the snapshot or `python m13_rebuild_snapshot.py` when data corruption occurs.
 * **Telegram Bot**: run `python m17_telegram_bridge.py` to start the Telegram bot for interactive forecasts. Use `/start` to see all commands, `/dailyforecast` to receive daily 9AM forecasts.

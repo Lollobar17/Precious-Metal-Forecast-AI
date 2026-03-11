@@ -1,8 +1,8 @@
 import pandas as pd
 from datetime import datetime
-import m5_v2_data_loader as loader
-import m6_v2_model as model_engine
-import m7_v2_backtester as backtester
+import m05_v2_data_loader as loader
+import m06_v2_model as model_engine
+import m07_v2_backtester as backtester
 
 def run_v2_integrated_system():
     print(f"{'='*50}")

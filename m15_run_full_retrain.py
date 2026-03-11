@@ -46,7 +46,7 @@ def main():
     if args.trials > 0:
         print("\n=== hyperparameter search ===")
         try:
-            subprocess.run([sys.executable, 'm9_v3_hyper_optimizer.py',
+            subprocess.run([sys.executable, 'm09_v3_hyper_optimizer.py',
                             '--trials', str(args.trials)], check=True)
         except subprocess.CalledProcessError as exc:
             print("optimizer exited with code", exc.returncode)

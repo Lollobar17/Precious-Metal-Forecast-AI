@@ -60,4 +60,4 @@ def v2_plot_equity_curves(backtest_reports):
     plt.show()
 
 if __name__ == "__main__":
-    print("V2 Backtester module executed. Integrate this with m6_v2_model.py in m4_main.py")
+    print("V2 Backtester module executed. Integrate this with m06_v2_model.py in m04_main.py")

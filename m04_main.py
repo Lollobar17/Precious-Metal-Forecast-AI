@@ -1,6 +1,6 @@
-from m1_data_loader import download_data
-from m2_processor import add_indicators
-from m3_model import train_model
+from m01_data_loader import download_data
+from m02_processor import add_indicators
+from m03_model import train_model
 import matplotlib.pyplot as plt
 
 def run_system():
