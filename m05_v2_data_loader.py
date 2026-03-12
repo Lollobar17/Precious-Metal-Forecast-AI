@@ -12,7 +12,7 @@ def v2_load_and_sync_data(period="5y", interval="1d"):
         'Silver': 'SI=F',
         'Platinum': 'PL=F',
         'Palladium': 'PA=F',
-        'Copper': 'HG=F',    # added copper
+        'Copper': 'HG=F',    
         'BTC': 'BTC-USD'
     }
     print(f"--- Downloading data for: {list(tickers.keys())} ---")
