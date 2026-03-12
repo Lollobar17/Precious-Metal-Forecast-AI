@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-# Note: Create a .env file with TELEGRAM_BOT_TOKEN=your_token before uploading to GitHub
+# Note: Create a .env file with TELEGRAM_BOT_TOKEN=your_token before uploading 
 try:
     load_dotenv()
 except NameError:
