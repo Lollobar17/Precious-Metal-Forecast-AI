@@ -1,6 +1,6 @@
 # Precious Metal Forecast Workspace
 
-This repository contains a series of Python scripts for downloading market data, engineering features, training machine learning models, backtesting strategies and generating forecasts for precious metals. The code has evolved through several versions; the files are arranged by version and purpose. A requirements file (`m0_requirements.txt`) lists the necessary Python packages.
+This repository contains a series of Python scripts for downloading market data, engineering features, training machine learning models, backtesting strategies and generating forecasts for precious metals. The code has evolved through several versions; the files are arranged by version and purpose. A requirements file (`m00_requirements.txt`) lists the necessary Python packages.
 
 ## File Organization & Logical Order
 
